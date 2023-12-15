@@ -1,9 +1,8 @@
-/**
-  |============================
+/* |============================
   | include css partials with
   | default @import url()
-  |============================
-*/
+  |============================ */
+
 @import url('./reset.css');
 @import url('./vite-promo.css');
 @import url('./header.css');
@@ -22,4 +21,93 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+.gallery {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 156px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+}
+.modal-window-style {
+  background: rgba(46, 47, 66, 0.8);
+}
+
+/* -----------FORM------------------ */
+
+* {
+  box-sizing: border-box;
+}
+
+.feedback-form {
+  margin: 0 auto;
+  width: 408px;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: rgb(238, 235, 235);
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.label-text {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  padding: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+}
+textarea {
+  resize: none;
+  width: 100%;
+  height: 80px;
+}
+button {
+  width: 95px;
+  height: 40px;
+  margin-top: 8px;
+  display: inline-flex;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: rgba(255, 255, 255, 1);
+  font-size: inherit;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover,
+button:focus {
+  background-color: #1976d2;
 }
